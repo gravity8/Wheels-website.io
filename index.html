@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAR WEBSITE</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FontAwesome---------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- lightsliderJS -->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <img class="logo" src="images/LOGO.svg" alt="LOGO" />
+      <img class="cta" src="images/Navigation.svg" alt="Navigation" />
+    </div>
+    <!-- First Section -->
+    <div class="Hero-text-containers">
+      <div class="Text-button-container">
+        <div class="text-container">
+          <h1 class="hero-text">
+            WHEELS FOR <span style="color: #e8042f"> LIFE</span>
+          </h1>
+          <p class="sub-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis eos maxime natus ducimus reiciendis atque possimus
+            maiores doloribus officia.
+          </p>
+        </div>
+        <img class="Button1" src="images/CTA.svg" alt="CTA" />
+      </div>
+      <div class="Redbox">
+        <div class="Perfect-choice-text">
+          <h2 class="perfect-choice">Perfect Choice</h2>
+          <p class="lorem-text">
+            Lorem ipsum dolor sit amet, cons ect etur adip iscing elit. Fames
+            morbi....
+          </p>
+          <div class="stars-rating">
+            <img src="images/Stars.svg" alt="" />
+            <p style="color: white; font-family: helvetica; font-size: 16px">
+              4.9 Rating
+            </p>
+          </div>
+        </div>
+        <div class="car-Navigation">
+          <img class="car1" id="carShow" src="images/car1.png" alt="car1" />
+          <div class="nav-box">
+            <div class="circle" onclick="changeBG1()"></div>
+            <div class="circle" onclick="changeBG2()"></div>
+            <div class="circle" onclick="changeBG3()"></div>
+          </div>
+        </div>
+      </div>
+      <img class="mockup" id="mockup" src="images/mockup.png" alt="" />
+      <div class="ReadmoreTrans">
+        <img class="arrow" src="images/Arrow.svg" alt="arrowsvg" />
+        <p style="color: white; font-family: helvetica; font-size: 22px">
+          Read More
+        </p>
+      </div>
+    </div>
+    <!-- Second Section -->
+    <div class="Second-Section">
+      <div class="text-container-2">
+        <h2 class="hero-text2">
+          What do we <span style="color: #e8042f">offer?</span>
+        </h2>
+        <p class="sub-text" style="font-size: 16px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet
+          vitae lacus dictum <br />malesuada tortor aliquam.
+        </p>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/badSmell.svg" class="bad-smell" alt="" />
+          <h3 class="card-h3">No Bad Smell</h3>
+          <p class="card-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            egestas at praesent odio sagittis viverra. Blandit elit aliquam
+            risus a sed. Metus fringilla lacus praesent augue non sagittis proin
+            tempus. Nisl pretium nunc, non enim sit consectetur blandit ipsum.
+          </p>
+        </div>
+        <div class="card card-2">
+          <img src="images/Punture.svg" class="bad-smell" alt="" />
+          <h3 class="card-h3">Puncture Resistant</h3>
+          <p class="card-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            egestas at praesent odio sagittis viverra. Blandit elit aliquam
+            risus a sed. Metus fringilla lacus praesent augue non sagittis proin
+            tempus. Nisl pretium nunc, non enim sit consectetur blandit ipsum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Third Section -->
+    <div class="Third-Section">
+      <div class="text-container-2 text-container-3">
+        <h2 class="hero-text2">
+          The Amazing <span style="color: #e8042f">Benefits</span>
+        </h2>
+        <p class="sub-text" style="font-size: 16px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet
+          vitae lacus dictum <br />malesuada tortor aliquam.
+        </p>
+      </div>
+      <div class="Relativity-box">
+        <div class="function-box-container">
+          <div class="function-box">
+            <img
+              src="images/stable.png"
+              class="img-coned"
+              alt="stable-driving"
+            />
+            <p
+              style="font-family: helvetica; font-weight: 700; font-size: 20px"
+            >
+              Stable Driving
+            </p>
+          </div>
+          <div class="function-box img-coned-2">
+            <img
+              src="images/heavy.png"
+              class="img-coned"
+              alt="heavy-road-performance"
+            />
+            <p
+              style="font-family: helvetica; font-weight: 700; font-size: 20px"
+            >
+              Heavy Road Performance
+            </p>
+          </div>
+          <div class="function-box">
+            <img
+              src="images/wet-grip.png"
+              class="img-coned"
+              alt="strong-wet-grip"
+            />
+            <p
+              style="font-family: helvetica; font-weight: 700; font-size: 20px"
+            >
+              Strong Wet Grip
+            </p>
+          </div>
+        </div>
+        <div class="Wheel-Container">
+          <img src="images/Subtract.svg" class="subtract-img" alt="subtract" />
+          <img
+            src="images/half-wheel.svg"
+            id="halfwheel"
+            class="half-wheel"
+            alt=""
+          />
+          <div class="circles-box first-dot">
+            <div class="Bcircle">
+              <div class="Scircle"></div>
+            </div>
+          </div>
+          <div class="circles-box second-dot">
+            <div class="Bcircle">
+              <div class="Scircle"></div>
+            </div>
+          </div>
+          <div class="circles-box third-dot">
+            <div class="Bcircle">
+              <div class="Scircle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="fadebox"></div>
+        <img class="companylogo" src="images/companylogo.svg" alt="" />
+      </div>
+    </div>
+    <!-- Fourth-Section -->
+    <div class="Fourth-Section">
+      <img src="images/tyremark.svg" class="tyremark" alt="" />
+      <div class="fadebox Reset"></div>
+      <div class="text-container-2">
+        <h2 class="hero-text2">
+          Explore Our <span style="color: #e8042f">Tyres</span>
+        </h2>
+        <p class="sub-text" style="font-size: 16px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet
+          vitae lacus dictum <br />malesuada tortor aliquam.
+        </p>
+      </div>
+      <!-- lightslider -->
+      <ul id="autoWidth" class="cs-hidden">
+        <!-- 1------------------------------- -->
+        <li class="item-a">
+          <div class="tyreslider">
+            <div class="tyre-card">
+              <div>
+                <img src="images/tyreimg.svg" class="tyreimg" alt="tyre" />
+                <div class="tyre-shadow"></div>
+              </div>
+
+              <div class="details">
+                <div class="tyreName">
+                  <h2>Durable Tyre X</h2>
+                  <h2>$30</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <h3><del>$30</del></h3>
+                </div>
+              </div>
+              <img src="images/CTA2.svg" class="CTA2" alt="" />
+              <div class="percentage">
+                <h3>20%</h3>
+                <p>Off</p>
+              </div>
+              <div class="cart-like">
+                <div class="icon-container">
+                  <img
+                    id="cart"
+                    src="images/cart.svg"
+                    onclick="addToCart()"
+                    style="height: 16.2px; width: 16.4px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/like.svg" id="like" onclick="like()"
+                  style="width:12.47px; height:13.95px; alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 2------------------------------- -->
+        <li class="item-b">
+          <div class="tyreslider">
+            <div class="tyre-card">
+              <div>
+                <img src="images/tyreimg.svg" class="tyreimg" alt="tyre" />
+                <div class="tyre-shadow"></div>
+              </div>
+
+              <div class="details">
+                <div class="tyreName">
+                  <h2>Durable Tyre X</h2>
+                  <h2>$20</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <h3><del>$30</del></h3>
+                </div>
+              </div>
+              <img src="images/CTA2.svg" class="CTA2" alt="" />
+              <div class="percentage">
+                <h3>20%</h3>
+                <p>Off</p>
+              </div>
+              <div class="cart-like">
+                <div class="icon-container">
+                  <img
+                    src="images/cart.svg"
+                    style="height: 16.2px; width: 16.4px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/like.svg" style="width:12.47px;
+                  height:13.95px; alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 3------------------------------- -->
+        <li class="item-c">
+          <div class="tyreslider">
+            <div class="tyre-card">
+              <div>
+                <img src="images/tyreimg.svg" class="tyreimg" alt="tyre" />
+                <div class="tyre-shadow"></div>
+              </div>
+
+              <div class="details">
+                <div class="tyreName">
+                  <h2>Durable Tyre X</h2>
+                  <h2>$80</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <h3><del>$100</del></h3>
+                </div>
+              </div>
+              <img src="images/CTA2.svg" class="CTA2" alt="" />
+              <div class="percentage">
+                <h3>20%</h3>
+                <p>Off</p>
+              </div>
+              <div class="cart-like">
+                <div class="icon-container">
+                  <img
+                    src="images/cart.svg"
+                    style="height: 16.2px; width: 16.4px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/like.svg" style="width:12.47px;
+                  height:13.95px; alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 4------------------------------- -->
+        <li class="item-d">
+          <div class="tyreslider">
+            <div class="tyre-card">
+              <div>
+                <img src="images/tyreimg.svg" class="tyreimg" alt="tyre" />
+                <div class="tyre-shadow"></div>
+              </div>
+
+              <div class="details">
+                <div class="tyreName">
+                  <h2>Durable Tyre X</h2>
+                  <h2>$90</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <h3><del>$380</del></h3>
+                </div>
+              </div>
+              <img src="images/CTA2.svg" class="CTA2" alt="" />
+              <div class="percentage">
+                <h3>20%</h3>
+                <p>Off</p>
+              </div>
+              <div class="cart-like">
+                <div class="icon-container">
+                  <img
+                    src="images/cart.svg"
+                    style="height: 16.2px; width: 16.4px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/like.svg" style="width:12.47px;
+                  height:13.95px; alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- 5------------------------------- -->
+        <li class="item-e">
+          <div class="tyreslider">
+            <div class="tyre-card">
+              <div>
+                <img src="images/tyreimg.svg" class="tyreimg" alt="tyre" />
+                <div class="tyre-shadow"></div>
+              </div>
+
+              <div class="details">
+                <div class="tyreName">
+                  <h2>Durable Tyre X</h2>
+                  <h2>$25</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <h3><del>$180</del></h3>
+                </div>
+              </div>
+
+              <img src="images/CTA2.svg" class="CTA2" alt="" />
+
+              <div class="percentage">
+                <h3>20%</h3>
+                <p>Off</p>
+              </div>
+              <div class="cart-like">
+                <div class="icon-container">
+                  <img
+                    src="images/cart.svg"
+                    style="height: 16.2px; width: 16.4px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-container">
+                  <img src="images/like.svg" style="width:12.47px;
+                  height:13.95px; alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- FIFTH-SECTION--------------------- -->
+    <div class="Fifth-Section">
+      <div class="box-pattern-container">
+        <div class="col-5"></div>
+        <div class="Flag-red"></div>
+        <div class="content-container">
+          <div class="text-contents">
+            <h2>Embracing journeys, enabling dreams</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sed
+              viverra diam hendrerit nibh et, eleifend. Sed quis auctor
+              ultricies volutpat, porta velit viverra odio.
+            </p>
+          </div>
+          <iframe
+            src="https://www.youtube.com/embed/SBQlKwZnIFA"
+            title="The New Range Rover - the Definition of Luxury Travel"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <img class="Button1" src="images/CTA.svg" alt="CTA" />
+          <img
+            src="images/PaymentGateways.svg"
+            class="PaymentGateways"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- SIXTH-SECTION--------------------- -->
+    <div class="Sixth-Section">
+      <div class="text-container-2">
+        <h2 class="hero-text2">
+          Quality You <span style="color: #e8042f">Deserve</span>
+        </h2>
+        <p class="sub-text" style="font-size: 16px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet
+          vitae lacus dictum <br />malesuada tortor aliquam.
+        </p>
+      </div>
+      <div class="complex-section">
+        <div class="area">
+          <a
+            href="#"
+            class="demo-trigger"
+            data-medium-url="images/mockup.png"
+            data-large-url="images/mockup.png"
+          >
+            <img class="complex-section-image" src="images/mockup.png" />
+          </a>
+          <div class="durability child" id="durability" onclick="durability()">
+            <h2 class="durability-text">Durability</h2>
+          </div>
+          <div
+            class="performance child"
+            id="performance"
+            onclick="performance()"
+          >
+            <h2 class="performance-text">Performance</h2>
+          </div>
+          <div class="quality child" id="quality" onclick="quality()">
+            <h2 class="quality-text">Quality</h2>
+          </div>
+          <div class="definition-box">
+            <h2 class="definition-box-h2" id="definition-box-h2">
+              Gaps for improved performance
+            </h2>
+            <p class="definition-box-p" id="definition-box-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet
+              vitae lacus dictum malesuada tortor aliquam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SEVENTH-SECTION---------- -->
+    <div class="Seventh-Section">
+      <div class="record">
+        <div>
+          <h3>21k+</h3>
+          <p>Likes</p>
+        </div>
+        <div>
+          <h3>32k+</h3>
+          <p>Purchases</p>
+        </div>
+        <div>
+          <h3>28k+</h3>
+          <p>Recommends</p>
+        </div>
+      </div>
+    </div>
+    <!-- EIGTH-SECTION--------------- -->
+    <div class="Eigth-Section">
+      <div class="text-container-2">
+        <h2 class="hero-text2">
+          Our Happy <span style="color: #e8042f">Clients</span>
+        </h2>
+        <p class="sub-text" style="font-size: 16px">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet
+          vitae lacus dictum <br />malesuada tortor aliquam.
+        </p>
+      </div>
+      <div class="testimonial">
+        <!-- lightslider -->
+        <ul id="autoWidth2" class="cs-hidden">
+          <!-- 1------------------------------- -->
+          <li class="item-a">
+            <div class="testimonial-card">
+              <div class="overlay">
+                <div class="card-contents">
+                  <h3>Arthur Artris</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Amet amet vitae lacus dictum malesuada tortor aliquam.
+                  </p>
+                  <div>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 2------------------------------- -->
+          <li class="item-b">
+            <div class="testimonial-card card2">
+              <div class="overlay">
+                <div class="card-contents">
+                  <h3>William S.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Amet amet vitae lacus dictum malesuada tortor aliquam.
+                  </p>
+                  <div>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 3------------------------------- -->
+          <li class="item-c">
+            <div class="testimonial-card card3">
+              <div class="overlay">
+                <div class="card-contents">
+                  <h3>Kol Jullian</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Amet amet vitae lacus dictum malesuada tortor aliquam.
+                  </p>
+                  <div>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 4------------------------------- -->
+          <li class="item-d">
+            <div class="testimonial-card card4">
+              <div class="overlay">
+                <div class="card-contents">
+                  <h3>William S.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Amet amet vitae lacus dictum malesuada tortor aliquam.
+                  </p>
+                  <div>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                    <i class="fa-solid fa-star yellow"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="centered">
+        <img class="Button1" src="images/CTA.svg" alt="CTA" />
+        <img src="images/PaymentGateways.svg" class="PaymentGateways" alt="" />
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="images-box">
+      <img src="images/car1.png" alt="car1" />
+      <img src="images/car2.png" alt="car2" />
+      <img src="images/car3.png" alt="car3" />
+      <img src="images/car4.png" alt="car4" />
+    </div>
+    <div class="copyright">
+      <h3>Wheels@AllRightsReserved &#169;2022</h3>
+    </div>
+  </footer>
+  <script src="JS/script.js"></script>
+</html>
+
+<!-- Leroy Zoom-------- -->
+<!-- Leroy Zoom-------- -->
