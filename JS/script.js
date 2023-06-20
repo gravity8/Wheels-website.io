@@ -13,23 +13,6 @@ function changeBG3() {
     document.getElementById("carShow").src = "images/car3.png"
 }
 
-function performance() {
-
-    document.getElementById("definition-box-h2").innerText = "Gaps for improved performance";
-    document.getElementById("definition-box-p").innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet vitae lacus dictum malesuada tortor aliquam."
-
-}
-
-function durability() {
-    document.getElementById("definition-box-h2").innerText = "Extreme Durability";
-    document.getElementById("definition-box-p").innerText = "Sole ability to withstand wear, pressure, or damage"
-}
-
-function quality() {
-    document.getElementById("definition-box-h2").innerText = "Gaps for improved quality";
-    document.getElementById("definition-box-p").innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet amet vitae lacus dictum malesuada tortor aliquam."
-}
-
 
 $(document).ready(function() {
     $('#autoWidth').lightSlider({

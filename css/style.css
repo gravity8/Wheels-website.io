@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap');
 * {
     margin: 0;
+    box-sizing: border-box ;
+    /* border: 1px solid red; */
 }
-
 .navbar {
     padding-top: 30px;
     width: 100%;
@@ -62,7 +64,13 @@
     align-items: center;
     background-image: url("images/BG.svg");
 }
-
+.Redbox .watermark{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('/Wheels-website/images/watermark.png') repeat;
+    z-index: 0;
+}
 .logo {
     margin-left: 9%;
 }
@@ -109,6 +117,7 @@
     width: 100%;
     margin: 0;
     background-color: #222222;
+    z-index: 6;
 }
 
 .car1 {
@@ -122,6 +131,7 @@
     width: 69%;
     text-align: center;
     margin-top: 130px;
+    z-index: 90;
 }
 
 .stars-rating {
@@ -151,25 +161,22 @@
 }
 
 .mockup {
+    z-index: 100;
     height: 570px;
+    width: 600px !important;
+
     position: absolute;
     left: 36%;
     top: 18%;
-    transition: all ease-in-out cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 1s ease;
+
 }
 
 .mockup:hover {
-    animation: motion5 1.5s;
+   transform: translateX(20%);
 }
 
-@keyframes motion5 {
-    0% {
-        left: 39%;
-    }
-    100% {
-        left: 43%;
-    }
-}
+
 
 .nav-box {
     position: absolute;
@@ -204,6 +211,7 @@
     width: 170px;
     height: 20px;
     transform: rotate(270deg);
+    z-index: 7;
 }
 
 .ReadmoreTrans:hover {
@@ -224,9 +232,12 @@
 .card-container {
     padding-bottom: 30px;
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    flex-direction: row;
-    overflow: hidden;
+    max-width: 1219px;
+    margin: auto auto;
+    gap:2rem;
+    padding-inline:2rem;
 }
 
 .card {
@@ -241,7 +252,6 @@
     justify-content: start;
     align-items: center;
     border-radius: 5px;
-    margin-left: 8%;
     transition: all 0.8s;
 }
 
@@ -251,7 +261,6 @@
 }
 
 .card-2 {
-    margin-left: 24px;
     transition: all 0.8s ease-in-out cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -281,12 +290,19 @@
     }
     .Text-button-container {
         width: 100%;
+        text-align: center;
+        padding-inline:3%;
+        margin-left: 0;
+    }
+    .text-container{
+        width: 100%;
     }
     .Redbox {
         width: 100%;
         flex-direction: row;
         height: 400px;
         margin-top: 50px;
+        height: 600px;
     }
     .car-Navigation {
         height: 100%;
@@ -305,12 +321,20 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .text-container{
+        text-align: center;
+        margin-left: 0;
+        max-width: 550px;
+        margin: auto !important;
+    }
     .hero-text {
+        text-align: center;
         font-style: normal;
         font-weight: 800;
-        font-size: 65px;
+        font-size: 8rem;
         line-height: 80%;
-        letter-spacing: -0.01em;
+        letter-spacing: -.5rem;
+
     }
     .lorem-text {
         margin-left: auto;
@@ -362,11 +386,15 @@
     .Hero-text-containers {
         overflow: hidden;
     }
-    .mockup {
-        z-index: -10;
-        left: 50%;
-        top: 20%;
+    .mockup{
+        position: relative;
+        left: unset;
+        top: unset;
+        margin: auto;
     }
+    .mockup:hover {
+        transform: unset;
+     }
     .card-container {
         flex-direction: column;
         align-items: center;
@@ -378,8 +406,27 @@
     .card-2 {
         margin-top: 50px;
     }
+    .tyremark{
+        display: none;
+    }
+    .fadebox{
+        display: none;
+    }
 }
 
+@media (max-width:830px) {
+    .Redbox{
+        height: 400px;
+    }
+}
+@media (max-width:600px) {
+    .mockup {
+        z-index: 10;
+        height: 370px;
+        width: 400px !important;
+        transition: 1s ease;
+    }
+}
 @media(width<580px) {
     .card {
         color: #FFFFFF;
@@ -407,7 +454,85 @@
         line-height: 140%;
     }
 }
+@media(max-width:450px){
+    .Hero-text-containers{
+        box-sizing: border-box;
+    }
+    .Text-button-container{
+       margin-left: auto;
+       margin-right: auto;
+        text-align: center;
+        
+    }
+    .text-container{
+        width: 100%;
+        padding-inline: 10%;
+        margin:0;
+    }
+    .text-container .hero-text{
+        font-size:6rem;
+        line-height: 100%;
+        letter-spacing: -.6rem;
+        font-weight: 00;
+    }   
+    .mockup{
+        position: absolute;
+        left: 50%;
+        margin-left:-187.5px;
+        top: 80vh;
+    }
+    .mockup:hover {
+        transform: unset;
+     }
+    .Redbox{
+        flex-direction: column;
+        height: 744px;
+        margin-top: 300px;
+        background-image:" /Wheels-website/images/watermark.png";
+    }
+    .Perfect-choice-text{
+        height: 377px !important;
+        margin-top: 139px;
+        margin-bottom: 93px;
+    }
+    .car-Navigation{
+        height: 367px !important;
+    }
+    .card{
+        width: 300px;
+        height:320px;
+        padding: 30px 20px;
+    }
+    .bad-smell{
+        width: 60px !important;
+        height: 60px !important;
+        margin-top: 1.5rem !important;
+    }
+    .card-h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+    } 
+    .card-p{
+        font-size:.8rem;
+        padding-inline: 10px;
+    }
 
+
+}
+@media (max-width:375px) {
+    .mockup {
+        z-index: 10;
+        height:360px;
+        width: 380px !important;
+        left: 50%;
+        margin-left: -190px;
+        transition: 1s ease;
+        top: 100vh;
+    }
+    .Redbox{
+        margin-top: 300px;
+    }
+}
 .arrow {
     width: 53px;
 }
@@ -438,9 +563,7 @@
     height: 100px;
 }
 
-.Third-Section {
-    height: 1138px;
-}
+
 
 .Relativity-box {
     position: relative;
@@ -451,15 +574,15 @@
 }
 
 .function-box-container {
-    height: 420px;
-    width: 1122px;
-    position: absolute;
+    max-width: 1211px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     padding-left: 6.2%;
     padding-right: 6.2%;
+    margin: auto auto;
 }
 
 .function-box {
@@ -470,83 +593,38 @@
     margin-bottom: 24px;
     transition: all 1.5s;
 }
-
+@media(max-width:600px){
+    .img-coned{
+        width: 70px;
+        margin-bottom: 16px;
+        aspect-ratio: 1/1;
+    }
+    .function-box p{
+        font-size: 16px !important;
+    }
+}
 .img-coned:hover {
     transform: scale(1.3);
 }
 
-.img-coned-2 {
-    align-self: flex-start;
-}
 
-.subtract-img {
-    position: absolute;
-    width: 1000px;
-    height: 500px;
-    left: 130px;
-    top: 200px;
+.wheel-Container{
+    width: 100%;
 }
 
 .half-wheel {
-    position: absolute;
-    height: 594px;
-    width: 780px;
-    left: 240px;
-    top: 160px;
+    width: 80%;
+    aspect-ratio: 2/1.2;
+    margin-left:10%;
+    margin-right: 10%;
     transition: all 1s;
+    z-index: -2;
 }
 
-.half-wheel:hover {
-    transform: scale(1.05);
-}
 
-.circles-box {
-    position: absolute;
-}
-
-.Bcircle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: rgba(216, 30, 46, 0.5);
-    border-radius: 50%;
-}
-
-.Scircle {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(216, 30, 46, 1);
-    border-radius: 50%;
-}
-
-.first-dot {
-    left: 245px;
-    top: 380px;
-}
-
-.second-dot {
-    left: 610px;
-    top: 185px;
-}
-
-.third-dot {
-    left: 980px;
-    top: 380px;
-}
-
-.fadebox {
-    position: absolute;
-    top: 640px;
+.partners{
     width: 100%;
-    height: 100px;
-    background: linear-gradient( 180deg, transparent, rgba(255, 255, 255, 0.942), #fff)
-}
-
-.companylogo {
-    position: absolute;
-    top: 730px;
+    height: 200px !important;
 }
 
 .Third-Section {
@@ -564,23 +642,24 @@
     z-index: -1;
 }
 
-.Reset {
+/* .Reset {
     height: 700px;
     top: 3100px;
     ;
-}
+} */
 
 .tyreimg {
-    width: 197.89px;
-    height: 240px;
+    width: 180px;
+    height: 220px;
     margin-top: 11px;
 }
 
 .tyreslider {
-    height: 556px;
-    width: 370px;
+    height: 500px;
+    width: 330px;
     display: flex;
     flex-direction: row;
+    gap: 2rem !important;
     justify-content: space-between;
     align-items: center;
 }
@@ -591,15 +670,14 @@
     align-items: center;
     justify-content: start;
     position: absolute;
-    width: 325.18px;
-    height: 407.92px;
+    width: 310px;
+    height: 390px;
     max-height: 556px;
     background-color: #FFFFFF;
     border-radius: 9px;
     text-align: center;
     box-sizing: border-box;
     box-shadow: 12px 7px 37px rgba(0, 0, 0, 0.1);
-    margin-left: 8%;
 }
 
 .tyre-card:hover {
@@ -639,7 +717,7 @@
 }
 
 .tyreName h2 {
-    font-family: Inter;
+    font-family: "Mukta";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -661,7 +739,7 @@
 }
 
 .description p {
-    font-family: Inter;
+    font-family: "Mukta";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -673,7 +751,7 @@
 }
 
 .description h3 {
-    font-family: Inter;
+    font-family: "Mukta";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -681,24 +759,31 @@
     color: #C7C7C7;
 }
 
-.percentage {
+.discount{
     position: absolute;
-    top: 205px;
-    left: 210px;
+    top: 170px;
+    left: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 68.26px;
-    height: 68.26px;
+    width: 62px;
+    gap:-5px;
+    height: 62px;
     background: radial-gradient(60.77% 113.24% at 50% 113.24%, rgba(255, 232, 179, 0.65) 0%, rgba(255, 188, 29, 0.65) 78.59%);
     border: 0.5px solid #FFD163;
     backdrop-filter: blur(5.02708px);
     -webkit-backdrop-filter: blur(5.02708px);
     border-radius: 50%;
-    font-family: inter;
+    font-family: "Mukta";
 }
-
+.discount>h3{
+    margin: 0;
+    font-size: 24px;
+}
+.discount>p{
+    margin:0;
+}
 .CTA2 {
     display: none;
     width: 187px;
@@ -712,7 +797,59 @@
 .CTA2:hover {
     animation: motionindex 0.8s;
 }
+@media (max-width:400px) {
+    .Fourth-Section .usingCss{
+        margin-left: 20px;
+    }
+    .tyre-card {
 
+        width: 290px;
+        height: 350px;
+        max-height: 556px;
+        background-color: #D81E2E;
+        border-radius: 9px;
+        margin-left: 25px;
+    }
+    .tyreimg{
+        height:180px;
+        width:160px;
+    }
+    .discount{
+        left: 140px;
+        top: 145px;
+    }
+    .discount>h3{
+        margin: 0;
+        font-size: 24px;
+        color: #fff;
+    }
+    .discount>p{
+        color: #fff;
+    }
+    .description{
+        color: #fff;
+    }
+    .CTA2{
+        display: unset;
+        margin-left: -8px;
+    }
+    .details .tyreName h2{
+        color: #fff;
+    }
+    .description p{
+        color: #fff;
+    }
+    .cart-like{
+        display: unset !important;
+        left: 240px !important;
+    }
+    .tyre-card:hover {
+        color: #FFFF;
+        transform-style: unset;
+        transform:unset;
+        transition: all 0.9s ease-in;
+    }
+}
 @keyframes motionindex {
     from {
         margin-left: 6px;
@@ -749,51 +886,67 @@
     background-color: #22222280;
     transition: all 0.8s ease;
 }
+.Fourth-Section{
+    padding-bottom: 200px;
+}
 
 .Fifth-Section {
-    height: 1203px;
     position: relative;
-    margin-bottom: 160px;
+    margin-bottom: 300px;
+    background-color: #fff;
 }
 
-.box-pattern-container {
-    height: 700px;
-}
+
 
 .col-5 {
     position: absolute;
     height: 700px;
     width: 100%;
     background-color: #222222;
-    z-index: -2;
+    z-index: 1;
+    
 }
 
 .Flag-red {
     position: absolute;
     left: 94px;
+    top: 0;
     background-color: #D81E2E;
     width: 266px;
     height: 844px;
-    z-index: -1;
+    z-index: 2;
+}
+@media(max-width:1000px){
+    .Flag-red {
+        left: 50px;
+    }
+    
 }
 
 .content-container {
-    position: absolute;
+    position: relative;
     width: 100%;
-    z-index: 1;
-    top: 250px;
+    max-width: 1400px;
+    z-index: 3;
+    top: 100px;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .text-contents {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1000px;
+    align-items: center;
+    width: 80%;
+    gap: 3rem;
     margin-bottom: 94px;
+
 }
 
 .text-contents>h2 {
@@ -811,7 +964,7 @@
 .text-contents>p {
     font-family: 'Helvetica';
     font-style: normal;
-    font-weight: 400;
+    font-weight: lighter;
     font-size: 16px;
     padding-top: 10px;
     width: 460px;
@@ -821,29 +974,74 @@
 }
 
 iframe {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-    height: 450px;
+    margin: auto auto;
+    width: 80%;
+    aspect-ratio: 3/2;
     margin-bottom: 63px;
     border-radius: 10px;
 }
+@media (max-width:650px) {
+    .text-contents{
+        flex-direction: column;
+        gap:0;
+        margin-bottom:40px;
+    }
+    .text-contents>h2{
+        text-align: center;
+        font-size: 40px;
+        line-height: 110%;
+        text-transform: uppercase;
+        letter-spacing: -.1rem;
+    }
+    .text-contents>p{
+        text-align: center;
+    }
+    iframe{
+        width: 90%;
+    }
+    .Flag-red{
+        width: 150px;
+        height: 500px;
+        left:10px;
+    }
+    .col-5{
+        height: 460px;
+        top: 0 !important;
+    }
+}
+@media (max-width:450px) {
+    .text-contents>p{
+        width: unset;
+    }
+    .text-contents>h2{
+        font-size: 35px;
+        width: unset;
+    }
+}
 
 .PaymentGateways {
+    width: 100% !important;
     margin-top: 30px;
 }
 
 .complex-section {
     width: 100%;
-    height: 1000px;
+    padding-bottom: 150px;
 }
 
 
 /* Lightslider */
 
 .usingCss {
-    margin-left: 8%;
-    width: 100% !important;
+    margin-left:100px;
+    margin-right:100px;
+    width: 86% !important;
+}
+@media(max-width:578px){
+    .usingCss {
+        margin-right:50px;
+        margin-left:50px;
+    }
 }
 
 .lSSlideOuter .lSPager.lSpg>li:hover a,
@@ -852,7 +1050,7 @@ iframe {
 }
 
 .lSSlideOuter .lSPager.lSpg>li a {
-    background-color: #E2E2E5 !important;
+    background-color: #E2E2E5;
 }
 
 
@@ -897,114 +1095,55 @@ a.magnified .zoom-cursor:after {
 
 .area {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-inline: 6rem;
+    
 }
-
+.area a{
+    border-radius: 50%;
+}
 .complex-section-image {
-    position: absolute;
+    /* position: absolute;
     top: 60px;
-    left: 370px;
+    left: 370px; */
+    width:600px;
+    aspect-ratio: 3/2.8;
+    
+}
+@media(max-width:1048px){
+    .complex-section-image {
+        width: 500px;
+    }
+}
+@media(max-width:920px){
+    .complex-section-image{
+        width:400px;
+    }
+}
+@media (max-width:650px) {
+    .area{
+        padding-inline:2rem;
+    }
+}
+@media(max-width:450px){
+    .complex-section-image{
+        width:340px;
+    }
+}
+.area{
+    max-width: 950px;
+    margin: auto auto;
 }
 
-.durability {
-    height: 270px;
-    width: 300px;
-    border: 170px solid rgba(255, 255, 255, 0);
-    border-bottom-color: #424242;
-    border-radius: 50%;
-    transform: rotate(35deg);
-    position: absolute;
-    top: 247px;
-    left: 420px;
-    z-index: -1;
-    transition: all 0.5s ease;
-}
 
-.durability:hover {
-    border-bottom-color: #D81E2E;
-}
-
-.durability:hover .durability-text {
-    font-weight: 500;
-}
-
-.durability-text {
-    position: absolute;
-    top: 120%;
-    left: 40%;
-    color: #ffff;
-    font-family: helvetica;
-    font-weight: 200;
-    transform: rotate(-10deg);
-}
-
-.performance {
-    height: 270px;
-    width: 300px;
-    border: 180px solid #ffffff00;
-    border-bottom-color: #333333;
-    border-radius: 50%;
-    position: absolute;
-    top: 225px;
-    left: 470px;
-    z-index: -1;
-    transform: rotate(-30deg);
-    transition: all 0.5s ease;
-}
-
-.performance-text {
-    position: absolute;
-    top: 120%;
-    left: 37%;
-    color: #ffff;
-    font-family: helvetica;
-    font-weight: 200;
-    transform: rotate(-5deg);
-}
-
-.performance:hover {
-    border-bottom-color: #D81E2E;
-}
-
-.performance:hover .performance-text {
-    font-weight: 500;
-}
-
-.quality {
-    height: 270px;
-    width: 340px;
-    border: 180px solid rgba(255, 255, 255, 0);
-    border-bottom-color: #1f1f1f;
-    border-radius: 50%;
-    position: absolute;
-    top: 140px;
-    left: 480px;
-    z-index: -3;
-    transform: rotate(-98deg);
-    transition: all 0.5s ease;
-}
-
-.quality-text {
-    position: absolute;
-    top: 135%;
-    left: 35%;
-    color: #ffff;
-    font-family: helvetica;
-    font-weight: 200;
-    transform: rotate(13deg);
-}
-
-.quality:hover {
-    border-bottom-color: #D81E2E;
-}
-
-.quality:hover .quality-text {
-    font-weight: 500;
-}
 
 .definition-box {
-    position: absolute;
+    /* position: absolute;
     top: 400px;
-    left: 8%;
+    left: 8%; */
 }
 
 .definition-box-h2 {
@@ -1025,31 +1164,45 @@ a.magnified .zoom-cursor:after {
     margin-bottom: 16px;
     color: #727272;
 }
-
+@media(max-width:800px){
+    .area{
+        flex-direction: column;
+    }
+    .definition-box-h2{
+        text-align: center;
+        width: unset;
+    }
+    .definition-box-p {
+        text-align:center;
+        width: unset;
+        padding-inline: 20px;
+    }
+}
 .Sixth-Section {
     position: relative;
 }
 
 .Seventh-Section {
     width: 100%;
-    height: 217px;
+    /* height: 217px;
     background-color: #F6F6F6;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     margin-bottom: 160px;
 }
 
 .Seventh-Section .record {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
+    gap: 15%;
+    background-color: #F6F6F6;
+    padding: 5rem;
 }
 
-.Seventh-Section .record div {
-    margin-right: 100px;
-}
 
 .Seventh-Section .record :nth-child(3) {
     margin-right: 0;
@@ -1074,9 +1227,14 @@ a.magnified .zoom-cursor:after {
     color: #D81E2E;
     text-align: center;
 }
-
+@media (max-width:730px) {
+    .Seventh-Section .record {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
 .testimonial {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .testimonial ul {
@@ -1087,7 +1245,7 @@ a.magnified .zoom-cursor:after {
     position: relative;
     width: 450px;
     height: 500px;
-    background: url("/images/imag1.jpg");
+    background: url("/Wheels-website/images/imag1.jpg");
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -1096,17 +1254,22 @@ a.magnified .zoom-cursor:after {
     overflow: hidden;
     margin-right: 20px;
 }
-
+@media(max-width:552px){
+    .testimonial-card {
+        width: 300px;
+        height: 350px;
+    }
+}
 .card2 {
-    background: url("/images/imag2.jpg");
+    background: url("/Wheels-website/images/imag2.jpg");
 }
 
 .card3 {
-    background: url("/images/imag3.jpg");
+    background: url("/Wheels-website/images/imag3.jpg");
 }
 
 .card4 {
-    background: url("/images/imag2.jpg");
+    background: url("/Wheels-website/images/imag3.jpg");
 }
 
 .testimonial-card .overlay {
@@ -1161,7 +1324,17 @@ a.magnified .zoom-cursor:after {
     line-height: 140%;
     margin-bottom: 12px;
 }
-
+@media(max-width:552px){
+    .testimonial-card {
+        width: 300px;
+        height: 350px;
+    }
+    .testimonial-card .overlay .card-contents p{
+        font-size:15px;
+        padding-inline: 2rem;
+    }
+    
+}
 .yellow {
     color: #FFBC1D;
 }
@@ -1177,14 +1350,21 @@ a.magnified .zoom-cursor:after {
 
 .images-box {
     width: 100%;
-    height: 320px;
+    aspect-ratio: 3/2;
     display: flex;
+    overflow: hidden;
 }
 
 .images-box img {
-    width: 320px;
+    width: 25%;
 }
-
+@media (max-width:450px) {
+    .images-box img{
+        width: 100%;
+        height: unset;
+        aspect-ratio: 1/1;
+    }
+}
 .copyright {
     height: 93px;
     display: flex;
@@ -1203,3 +1383,10 @@ a.magnified .zoom-cursor:after {
 .bak {
     background-color: #D81E2E;
 }
+/* .property{
+   padding: 40px 30px;
+    background-color: #424242;
+    border-radius: unset;
+    color: #fff;
+    text-decoration: none;
+} */
