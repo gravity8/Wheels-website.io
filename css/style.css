@@ -283,7 +283,7 @@
     line-height: 140%;
 }
 
-@media (width<1029px) {
+@media screen and (width<1029px) {
     .Hero-text-containers {
         flex-direction: column;
         width: 100%;
@@ -414,12 +414,12 @@
     }
 }
 
-@media (max-width:830px) {
+@media screen and (max-width:830px) {
     .Redbox{
         height: 400px;
     }
 }
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
     .mockup {
         z-index: 10;
         height: 370px;
@@ -427,7 +427,7 @@
         transition: 1s ease;
     }
 }
-@media(width<580px) {
+@media screen and (width<580px) {
     .card {
         color: #FFFFFF;
         box-shadow: 12px 7px 37px rgba(0, 0, 0, 0.1);
@@ -454,7 +454,7 @@
         line-height: 140%;
     }
 }
-@media(max-width:450px){
+@media screen and (max-width:450px){
     .Hero-text-containers{
         box-sizing: border-box;
     }
@@ -476,6 +476,8 @@
         font-weight: 00;
     }   
     .mockup{
+        height:350px;
+        width: 360px !important;
         position: absolute;
         left: 50%;
         margin-left:-187.5px;
@@ -519,7 +521,7 @@
 
 
 }
-@media (max-width:375px) {
+@media screen and (max-width:375px) {
     .mockup {
         z-index: 10;
         height:360px;
@@ -555,7 +557,17 @@
     color: #222222;
     margin-bottom: 16px;
 }
-
+@media screen and (max-width:400px){
+    .hero-text2{
+        width: 100%;
+        font-size: 42px;
+    }
+    .sub-text{
+        width: 100%;
+        font-size: 14px;
+        padding-inline:2rem;
+    }
+}
 .bad-smell {
     margin-top: 83px;
     margin-bottom: 20px;
@@ -593,7 +605,7 @@
     margin-bottom: 24px;
     transition: all 1.5s;
 }
-@media(max-width:600px){
+@media screen and (max-width:600px){
     .img-coned{
         width: 70px;
         margin-bottom: 16px;
@@ -797,7 +809,7 @@
 .CTA2:hover {
     animation: motionindex 0.8s;
 }
-@media (max-width:400px) {
+@media screen and (max-width:400px) {
     .Fourth-Section .usingCss{
         margin-left: 20px;
     }
@@ -916,7 +928,7 @@
     height: 844px;
     z-index: 2;
 }
-@media(max-width:1000px){
+@media screen and (max-width:1000px){
     .Flag-red {
         left: 50px;
     }
@@ -980,7 +992,7 @@ iframe {
     margin-bottom: 63px;
     border-radius: 10px;
 }
-@media (max-width:650px) {
+@media screen and (max-width:650px) {
     .text-contents{
         flex-direction: column;
         gap:0;
@@ -1009,7 +1021,7 @@ iframe {
         top: 0 !important;
     }
 }
-@media (max-width:450px) {
+@media screen and (max-width:450px) {
     .text-contents>p{
         width: unset;
     }
@@ -1037,7 +1049,7 @@ iframe {
     margin-right:100px;
     width: 86% !important;
 }
-@media(max-width:578px){
+@media screen and (max-width:578px){
     .usingCss {
         margin-right:50px;
         margin-left:50px;
@@ -1113,22 +1125,22 @@ a.magnified .zoom-cursor:after {
     aspect-ratio: 3/2.8;
     
 }
-@media(max-width:1048px){
+@media screen and (max-width:1048px){
     .complex-section-image {
         width: 500px;
     }
 }
-@media(max-width:920px){
+@media screen and (max-width:920px){
     .complex-section-image{
         width:400px;
     }
 }
-@media (max-width:650px) {
+@media screen and (max-width:650px) {
     .area{
         padding-inline:2rem;
     }
 }
-@media(max-width:450px){
+@media screen and (max-width:450px){
     .complex-section-image{
         width:340px;
     }
@@ -1157,7 +1169,7 @@ a.magnified .zoom-cursor:after {
     margin-bottom: 16px;
     color: #727272;
 }
-@media(max-width:800px){
+@media screen and (max-width:800px){
     .area{
         flex-direction: column;
     }
@@ -1214,7 +1226,7 @@ a.magnified .zoom-cursor:after {
     color: #D81E2E;
     text-align: center;
 }
-@media (max-width:730px) {
+@media screen and (max-width:730px) {
     .Seventh-Section .record {
         flex-direction: column;
         gap: 30px;
@@ -1241,7 +1253,7 @@ a.magnified .zoom-cursor:after {
     overflow: hidden;
     margin-right: 20px;
 }
-@media(max-width:552px){
+@media screen and (max-width:552px){
     .testimonial-card {
         width: 300px;
         height: 350px;
@@ -1311,7 +1323,7 @@ a.magnified .zoom-cursor:after {
     line-height: 140%;
     margin-bottom: 12px;
 }
-@media(max-width:552px){
+@media screen and (max-width:552px){
     .testimonial-card {
         width: 300px;
         height: 350px;
@@ -1345,7 +1357,7 @@ a.magnified .zoom-cursor:after {
 .images-box img {
     width: 25%;
 }
-@media (max-width:450px) {
+@media screen and (max-width:450px) {
     .images-box img{
         width: 100%;
         height: unset;
